@@ -16,7 +16,7 @@ const Aft = () => {
                 </p>
             </div>
             <div style={{ position: 'relative' }}>
-                <Grid container spacing={5} className="flex overflow-hidden pb-[100px] sm:px-[66px] px-[20px] pt-[50px]">
+                <Grid container spacing={5} className="flex overflow-hidden pb-[100px] md:px-[66px] px-[20px] pt-[50px]">
                     <Grid item xs>
                         <Card className="aft_card" elevation={0}>
                             <p className='aft_card_heading'>Discover, Explore the Product</p>

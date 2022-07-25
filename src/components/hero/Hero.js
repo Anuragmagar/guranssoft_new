@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react'
 import './Hero.css'
-import { Grid } from '@mui/material'
 import { gsap } from "gsap";
 import { FaAward, FaFire, FaArrowRight } from 'react-icons/fa'
 import { FcIdea } from 'react-icons/fc'
@@ -9,24 +8,24 @@ import { GiTechnoHeart } from 'react-icons/gi'
 const Hero = () => {
     const forthoseRef = useRef();
     useEffect(() => {
-        // gsap.timeline({ repeat: -1 })
-        //     .from(forthoseRef.current.children, {
-        //         y: 30,
-        //         opacity: 0,
-        //         rotateX: -90,
-        //         stagger: 3,
-        //     })
-        //     .to(forthoseRef.current.children, {
-        //         y: -30,
-        //         opacity: 0,
-        //         rotateX: -90,
-        //         stagger: 3,
-        //     }, 3);
+        gsap.timeline({ repeat: -1 })
+            .from(forthoseRef.current.children, {
+                y: 30,
+                opacity: 0,
+                rotateX: -90,
+                stagger: 3,
+            })
+            .to(forthoseRef.current.children, {
+                y: -30,
+                opacity: 0,
+                rotateX: -90,
+                stagger: 3,
+            }, 3);
     });
 
     return (
-        <div className='sm:pl-[100px] pt-[150px] h-[130vh] sm:h-[100vh]' style={{ position: 'relative' }}>
-            <div className="px-[15px] sm:flex sm:overflow-hidden">
+        <div className='lg:pl-[40px] sm:pt-[170px] pt-[150px] h-[180vh] sm:h-[200vh] lg:h-[130vh] overflow-hidden' style={{ position: 'relative' }}>
+            <div className="px-[15px] md:px-[40px] lg:flex overflow-hidden">
                 <div>
                     <h1 className='hero_title 
                         font-black
@@ -35,8 +34,8 @@ const Hero = () => {
                         leading-[75px] 
                         gradient__text
                         text-center
-                        sm:text-left
-                        sm:w-[630px]'>We'll design <br /> and maintain your own unique websites!</h1>
+                        md:text-left
+                        md:w-[630px]'>We'll design <br /> and maintain your own unique websites!</h1>
                     <div className="text-[#ffffffd1] mt-[25px] flex">
                         <div style={{ minWidth: '110px' }}>
                             For those who
@@ -46,22 +45,22 @@ const Hero = () => {
                                 <p>are striving for <b>quality</b> at all stages. </p>
                                 <p><FaAward color='yellow' size={22} /></p>
                             </div>
-                            {/* <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
                                 <p>believe in <b>beautiful software</b>.</p>
                                 <p><FaFire color='red' size={22} /></p>
-                            </div> */}
-                            {/* <div className='sm:flex sm:items-center'>
-                                <p className='hidden sm:block'>need <b>technology</b> to reveal the beauty of products believe in beautiful and smart design.</p>
+                            </div>
+                            <div className='sm:flex sm:items-center'>
+                                <p className='hidden lg:block'>need <b>technology</b> to reveal the beauty of products believe in beautiful and smart design.</p>
                                 <p><GiTechnoHeart color="blue" size={22} /></p>
-                            </div> */}
-                            {/* <div style={{ display: 'flex', alignItems: 'center' }}>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
                                 <p>need to build <b>complex</b> project.</p>
                                 <p><FcIdea color='yellow' size={22} /></p>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
-                    <div className='flex justify-center'>
-                        <button className='flex bg-red-500 p-3 rounded-3xl text-white font-bold mt-[110px] items-center' style={{}}>
+                    <div className='flex justify-center lg:justify-start'>
+                        <button className='flex bg-red-500 p-3 rounded-3xl text-white font-bold mt-[110px] mb-[60px] items-center' style={{}}>
                             <p>Enquire Now</p>
                             <div className='p-[5px] ml-[10px] bg-white rounded-full'>
                                 <FaArrowRight color="black" />
@@ -69,9 +68,9 @@ const Hero = () => {
                         </button>
                     </div>
                 </div>
-                <div className='mt-[90px]'>
-                    <img src='./hero.svg' className='sm:w-[700px]' />
-                </div>
+                {/* <div className='hidden sm:flex mt-[90px]'> */}
+                <img src='./hero.svg' className='' />
+                {/* </div> */}
             </div>
             <div className="divider">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

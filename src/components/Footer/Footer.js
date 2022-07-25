@@ -6,11 +6,11 @@ const Footer = () => {
     return (
         <div>
             <div className='px-[60px] text-white'>
-                <div className="footer sm:flex justify-between py-10 ">
+                <div className="footer md:flex justify-between py-10 ">
                     <div >
                         <img width="200px" src='./logo-banner.png' />
                     </div>
-                    <div className='mt-[40px] sm:mt-0'>
+                    <div className='mt-[40px] md:mt-0'>
                         <h4>Links</h4>
                         <p>Social Media</p>
                         <p>Contact</p>

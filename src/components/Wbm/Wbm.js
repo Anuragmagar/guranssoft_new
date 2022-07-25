@@ -1,5 +1,4 @@
 import React from 'react'
-import { Grid } from '@mui/material'
 import './Wbm.css'
 import { FaReact, FaLaravel } from 'react-icons/fa'
 import { RiVuejsFill } from 'react-icons/ri'
@@ -8,17 +7,17 @@ import { SiMysql } from 'react-icons/si'
 
 const Wbm = () => {
     return (
-        <div className='sm:px-[70px] px-[25px]'>
-            <Grid container spacing={5} className="" style={{ marginTop: '60px' }}>
-                <Grid item xs>
+        <div className='md:px-[70px] px-[25px]'>
+            <div className="lg:flex" style={{ marginTop: '60px' }}>
+                <div>
                     <div className='wbm_bar' />
                     <p className='font-extrabold text-[38px]' style={{ lineHeight: '48px' }}>We build more than just experiences</p>
 
                     <p className='text-[14px] mt-[50px]' style={{ lineHeight: '24px' }}>
                         Gurans Soft. Tech. is a well-known web development and design firm in Nepal. We offer top-notch services in these areas. We'll show you how to create user experiences and interfaces using the best practices. Our services will bring your
                     </p>
-                </Grid>
-                <Grid item xs>
+                </div>
+                <div className='lg:ml-[84px] lg:pt-[53px]'>
                     <p className='text-[14px]' style={{ lineHeight: '24px' }}>
                         customers closer to your goods and services while seamlessly integrating into your company environment.
                     </p>
@@ -32,8 +31,8 @@ const Wbm = () => {
                         <SiMysql color='#3E6E93' />
                         <FaLaravel color='#F9322C' />
                     </div>
-                </Grid>
-            </Grid>
+                </div>
+            </div>
 
         </div>
     )

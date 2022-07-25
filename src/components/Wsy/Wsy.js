@@ -8,13 +8,13 @@ import './Wsy.css'
 
 const Wsy = () => {
     return (
-        <div style={{ position: 'relative' }} className="sm:px-[70px] px-[25px]">
-            <div className='sm:flex' style={{}}>
+        <div style={{ position: 'relative' }} className="md:px-[70px] px-[25px]">
+            <div className='lg:flex' style={{}}>
                 <div>
                     <div className='wsy_bar' />
-                    <p className='font-extrabold text-[38px] sm:min-w-[295px] leading-[48px]' style={{}}>Why should you choose Gurans Soft. Tech.?</p>
+                    <p className='font-extrabold text-[38px] lg:min-w-[295px] leading-[48px]' style={{}}>Why should you choose Gurans Soft. Tech.?</p>
                 </div>
-                <p className='text-[14px] flex sm:pl-[142px]' style={{ alignItems: 'center', lineHeight: '25px' }}>We take great pride in what we do. To make your company stand out, our designers remain on top of the latest trends to produce appealing and user-friendly website designs. In order for your website to stand the test of time, our engineers are devoted to upholding the highest online standards. We cooperate with you because we care about your company. We have expertise in creating new digital projects from start as well as modernizing older ones.</p>
+                <p className='text-[14px] flex pt-[25px] lg:pt-0 lg:pl-[142px]' style={{ alignItems: 'center', lineHeight: '25px' }}>We take great pride in what we do. To make your company stand out, our designers remain on top of the latest trends to produce appealing and user-friendly website designs. In order for your website to stand the test of time, our engineers are devoted to upholding the highest online standards. We cooperate with you because we care about your company. We have expertise in creating new digital projects from start as well as modernizing older ones.</p>
             </div>
             <div style={{ display: 'flex', position: 'relative', overflow: 'hidden' }}>
                 <Grid container spacing={5} className="" style={{ marginTop: '60px', maxWidth: '657px' }}>
@@ -47,7 +47,7 @@ const Wsy = () => {
                         </Card>
                     </Grid>
                 </Grid>
-                <img className='wsy_img' src='./wsy_img.svg' />
+                <img className='wsy_img sm:hidden lg:flex' src='./wsy_img.svg' />
             </div>
         </div>
     )
